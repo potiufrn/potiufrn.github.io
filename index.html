@@ -20,7 +20,8 @@
   <!-- Libraries CSS Files -->
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="lib/animate/animate.min.css" rel="stylesheet">
-
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/venobox/venobox.css" rel="stylesheet">
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
 
@@ -43,14 +44,14 @@
       <div id="logo" class="pull-left">
         <!--<a href="#hero"><img src="img/logo.png" alt="" title="" /></img></a>-->
         <!-- Uncomment below if you prefer to use a text logo -->
-        <h1><a href="#hero">Poti</a></h1>
+        <h1><a href="#hero" class="scrollto">Poti</a></h1>
       </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active"><a href="#hero">Home</a></li>
           <li><a href="#about">Sobre</a></li>
-          <li><a href="#facts">Números</a></li>          
+          <li><a href="#faq">Trabalhos</a></li>          
           <li><a href="#services">Desenvolvimento</a></li>
           <li><a href="#contact">Contato</a></li>
 <!--           <li class="menu-has-children"><a href="">Mais</a>
@@ -86,10 +87,10 @@
     ============================-->
     <section id="about">
       <div class="container">
-        <div class="row about-container">
+        <div class="row about-container justify">
 
           <div class="col-lg-6 content order-lg-1 order-2">
-            <h2 class="title">Um pouco sobre a Equipe Poti</h2>
+            <h2 class="title">A Equipe Poti</h2>
             <p>
               Na <a href="http://www.ufrn.br" target="_blank">Universidade Federal do Rio Grande do Norte (UFRN)</a>, desde o ano de 1998, uma atividade que se destacou na Robótica, justamente por envolver pesquisa, desenvolvimento tecnológico, educação e competição, foi o futebol de robôs. Ele participa na categoria <a href="http://www.cbrobotica.org/?page_id=81" target="_blank">IEEE Very Small Size Soccer (VSSS)</a>, no qual é <a style="color: #0062a3">Pentacampeão</a>, e os trabalho são realizados no Laboratório de Robótica, no Departamento de Engenharia de Computação e Automação da UFRN.
             </p>
@@ -106,8 +107,7 @@
                 <li>2008, 3º lugar - Futebol de robôs categoria Mixed Reality</li>
                 <li>2007, 3º lugar - Futebol de robôs categoria Mixed Reality</li>
               </ul> 
-            </div>
-
+            </div>  
           </div>
 
           <div class="col-lg-6 background order-lg-2 order-1 wow fadeInRight"></div>
@@ -116,41 +116,59 @@
       </div>
     </section><!-- #about -->
 
-    <!--==========================
-      Facts Section
-    ============================-->
-    <section id="facts">
-      <div class="container wow fadeIn">
+
+
+    
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq">
+      <div class="container">
+
         <div class="section-header">
-          <h3 class="section-title">Poti em Números</h3>
-          <p class="section-description">Dados da Equipe Poti</p>
+          <h3 class="section-title">Trabalhos</h3>
+          <span class="section-divider"></span>
+          <p class="section-description">Conhecimento desenvolvido</p>
         </div>
-        <div class="row counters">
 
-  				<div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">15</span>
-            <p>Artigos Publicados</p>
-  				</div>
+        <ul id="faq-list" class="wow fadeInUp">
+          <li>
+            <a data-toggle="collapse" class="collapsed" href="#faq1">Artigos<i class="ion-android-remove"></i></a>
+            <div id="faq1" class="collapse" data-parent="#faq-list">
+              <p>
+                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+              </p>
+            </div>
+          </li>
 
-          <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">5</span>
-            <p>Premiações #1</p>
-  				</div>
+          <li>
+            <a data-toggle="collapse" href="#faq2" class="collapsed">Dissertações<i class="ion-android-remove"></i></a>
+            <div id="faq2" class="collapse" data-parent="#faq-list">
+              <p>
+                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+              </p>
+            </div>
+          </li>
 
-          <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">20</span>
-            <p>Competições</p>
-  				</div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">5</span>
-            <p>Membros</p>
-  				</div>
-
-  			</div>
+          <li>
+            <a data-toggle="collapse" href="#faq3" class="collapsed">Team Description Paper (TDP)<i class="ion-android-remove"></i></a>
+            <div id="faq3" class="collapse" data-parent="#faq-list">
+              <p>
+                TDPs recentes:
+              </p>
+              <ul class="bullet">
+                <li><a href="http://sistemaolimpo.org/midias/uploads/a17801f6c003c72c7c9e0f8efd5c2d4e.pdf" target="_blank">2019</a></li>
+                <li><a href="http://sistemaolimpo.org/midias/uploads/140590d25278b41deb7891fd08704de3.pdf" target="_blank">2018</a></li>
+                <li><a href="http://sistemaolimpo.org/midias/uploads/62c607fcc78330b937b048b2bec962b9.pdf" target="_blank">2017</a></li>
+                <li><a href="http://sistemaolimpo.org/midias/uploads/65cb4113878d2384dcc50a6894075b2e.pdf" target="_blank">2016</a></li>
+                <li><a href="http://sistemaolimpo.org/midias/uploads/0de70c1d55a12a893a14178f5c52b1df.pdf" target="_blank">2015</a></li>             
+              </ul>               
+            </div>
+          </li>
+        </ul>
 
       </div>
-    </section><!-- #facts -->
+    </section><!-- End Frequently Asked Questions Section -->
+
+
 
     <!--==========================
       Services Section
@@ -328,3 +346,20 @@
 
 </body>
 </html>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      } 
+    });
+  }
+  </script>

@@ -78,6 +78,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+/*Bullet de lista*/
+
 .bullet {
   list-style: none; /* Remove default bullets */
 }
@@ -89,6 +91,12 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block; /* Needed to add space between the bullet and the text */
   width: 1em; /* Also needed for space (tweak if needed) */
   margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+
+.justify div {
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 /*--------------------------------------------------------------
@@ -635,7 +643,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Facts Section
 --------------------------------*/
 #facts {
-  background: #f7f7f7;
+  background: #e9ecefc2;
   padding: 80px 0 60px 0;
 }
 
@@ -906,6 +914,71 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 18px;
   margin: 0 2px;
 }
+
+
+
+/* Frequently Asked Questions Section
+--------------------------------*/
+
+#faq {
+  padding: 60px 0;
+  overflow: hidden;
+  background: #e9ecefc2;
+  padding: 80px 0 60px 0;  
+}
+
+#faq #faq-list {
+  padding: 0;
+  list-style: none;
+}
+
+#faq #faq-list > li{
+  border-bottom: 1px solid #ddd;
+}
+
+#faq #faq-list a {
+  padding: 18px 0;
+  display: block;
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+  line-height: 1;
+  padding-right: 20px;
+}
+
+#faq #faq-list i {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  top: 16px;
+}
+
+#faq #faq-list p {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  #faq #faq-list a {
+    font-size: 18px;
+  }
+  #faq #faq-list i {
+    top: 13px;
+  }
+}
+
+#faq #faq-list a.collapse {
+  color: #1dc8cd;
+}
+
+#faq #faq-list a.collapsed {
+  color: #000;
+}
+
+#faq #faq-list a.collapsed i::before {
+  content: "\f2c7" !important;
+}
+
+
 
 /* Contact Section
 --------------------------------*/
